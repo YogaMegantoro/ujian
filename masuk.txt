@@ -1,1 +1,5 @@
-apapa
+git init
+git add .
+git status
+git commit -m "third commit"
+git push origin master
