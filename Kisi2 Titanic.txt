@@ -1,0 +1,14 @@
+filtering 
+fillna dropna
+groupby
+nambah kolom baru
+check outlayer mana nornmal mana enggak std(histogram) 3 SD
+muncul nunique value_counts
+csv
+
+use test_database;
+SELECT p.id as productid, p.nama as namaproduct, c.nama as namacategory, v.nama as namavendor, p.price, p.totalstock, p.stocksekarang   
+FROM product p
+JOIN vendor v ON v.id = p.vendorid
+JOIN category c ON c.id = p.categoryid
+ORDER by p.id;
